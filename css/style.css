@@ -1,60 +1,94 @@
 /* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 /* Body */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
 }
 
 /* Header */
 header {
-    background-color: #f8f8f8;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #f8f8f8;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
+  list-style: none;
+  display: flex;
+  gap: 15px;
 }
 header nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
-    background: #ffeedd;
-    padding: 40px;
-    text-align: center;
+  background: #ffeedd;
+  padding: 50px 20px;
+  text-align: center;
 }
 
 /* Categories */
 .categories {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
 }
 .category {
-    flex: 1 1 200px;
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 5px;
+  flex: 1 1 220px;
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+.category img {
+  width: 100%;
+  border-radius: 5px;
+  height: 140px;
+  object-fit: cover;
+}
+
+/* Latest Posts */
+.latest-posts {
+  padding: 20px;
+}
+.latest-posts h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.latest-posts .post {
+  margin-bottom: 20px;
+  background-color: #f8f8f8;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.latest-posts .post img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f8f8f8;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  margin-top: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 5px;
 }
